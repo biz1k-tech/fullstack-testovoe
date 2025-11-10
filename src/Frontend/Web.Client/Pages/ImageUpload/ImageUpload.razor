@@ -1,0 +1,34 @@
+﻿@page "/upload-image"
+@using Blazored.FluentValidation
+
+@rendermode InteractiveWebAssembly
+
+<h3>Загрузка Нового Изображения</h3>
+
+<EditForm Model="@ViewModel" OnValidSubmit="CreateImageAsync" FormName="ImageUpload">
+
+    <FluentValidationValidator/>
+
+    <div class="form-group mb-3">
+        <label for="description">Описание:</label>
+        <InputText id="description" class="form-control" @bind-Value="ViewModel.Description" />
+        <ValidationMessage For="@(() => ViewModel.Description)" /> 
+    </div>
+
+    <div class="form-group mb-4">
+        <label for="file">Файл изображения:</label>
+        <InputFile id="file" key="@ViewModel" OnChange="@((e) => LoadFile(e))" />
+        <ValidationMessage For="@(() => ViewModel.ImageBrowserFile)" /> 
+    </div>
+   
+    <button type="submit" class="btn btn-primary">
+        Сохранить
+    </button>
+
+    @if (isUploading)
+    {
+        <div class="alert alert-success mt-3" role="alert">
+            Картинка успешно сохранена!
+        </div>
+    }
+</EditForm>

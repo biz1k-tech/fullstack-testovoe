@@ -1,0 +1,83 @@
+﻿@page "/"
+@using Blazored.FluentValidation
+@using Web.Client.Components
+@rendermode InteractiveWebAssembly
+
+<h1>Галерея Изображений</h1>
+
+<ConfirmModalRemove @ref="_confirmModalRemove"
+                    Title="Подтверждение удаления"
+                    Message="Удалить выбранное изображение?"
+                    OnConfirm="ConfirmRemoveAsync"/>
+@if (!isLoad)
+{
+    <p>
+        <em>Загрузка изображений...</em>
+    </p>
+}
+else if (imagesViewModels is null || imagesViewModels.Count == 0)
+{
+    <p>Изображения не найдены.</p>
+}
+else
+{
+    <div class="image-gallery">
+        @foreach (var image in imagesViewModels)
+        {
+            <div class="gallery-item-wrapper" style="display: flex; gap: 100px; padding: 30px; border: 1px solid #ccc;">
+
+                <div class="image-info" style="display: flex; flex-direction: column; gap: 2px; align-items: stretch; width:400px;">
+                    <a href="@image.OriginalImageUrl"
+                       data-fancybox="gallery"
+                       data-caption="@image.Description">
+                        Просмотреть изображение
+                    </a>
+
+
+                    <p class="image-id mb-0">ID: @image.Id</p>
+                    <p class="image-description mb-0">Описание: @image.Description</p>
+                    <p class="image-date mb-0">Время создание: @image.CreatedAt</p>
+
+                    <div class="form-check mt-2">
+                        <input type="checkbox"
+                               class="form-check-input"
+                               checked="@image.IsCopied"
+                               disabled="disabled"
+                               id="copied_@image.Id"/>
+                        <label class="form-check-label" for="copied_@image.Id">
+                            Скопировано в БД2
+                        </label>
+                    </div>
+                </div>
+                <div class="info" style="display: flex; flex-direction: column; gap: 5px; align-items: stretch; width:400px;">
+                    <EditForm Model="@image" OnValidSubmit="@(() => UpdateImageAsync(image.Id))" FormName="UpdateImage">
+                        <FluentValidationValidator/>
+
+                        <div class="form-group mb-3 " >
+                            <label for="description">Описание:</label>
+                            <InputText id="description" class="form-control" style="width: 150px; margin-bottom:20px" @bind-Value="_updateImageViewModel.Description"/>
+                            <ValidationMessage For="@(() => _updateImageViewModel.Description)"/>
+
+                            <button type="submit" class="btn btn-primary w-50">
+                                Сохранить
+                            </button>
+                        </div>
+                    </EditForm>
+                    <div class="remove-image" style="margin-bottom: 10px">
+                        <button type="button" class="btn btn-primary w-50"
+                                @onclick="() => ShowConfirmModal(image.Id)">
+                            Удалить
+                        </button>
+                    </div>
+
+                    <div class="copy-image">
+                        <button type="button" class="btn btn-primary w-50"
+                                @onclick="async () => await CopyImageImageAsync(image.Id)">
+                            Скопировать
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

@@ -1,0 +1,28 @@
+﻿<div class="modal fade" id="confirmModalRemove" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>@Message</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-danger" @onclick="OnConfirm">Удалить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Title { get; set; } = "Подтверждение";
+    [Parameter] public string Message { get; set; } = "Вы уверены?";
+    [Parameter] public EventCallback OnConfirm { get; set; }
+
+    public async Task ShowAsync() => await JS.InvokeVoidAsync("showConfirmModal");
+    public async Task HideAsync() => await JS.InvokeVoidAsync("hideConfirmModal");
+
+    [Inject] private IJSRuntime JS { get; set; } = default!;
+}

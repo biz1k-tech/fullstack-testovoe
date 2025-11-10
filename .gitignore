@@ -1,0 +1,76 @@
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.suo
+*.user
+# Игнорирование папки для загружаемых/статических изображений
+src/Infrastracture/Images/
+
+*.userosscache
+*.sln.docstates
+*.vshost.*
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.o
+*.obj
+*.pch
+*.ipdb
+*.aps
+*.ncb
+*.dep
+*.bsp
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tds
+*.tsc
+*.stackdump
+
+# Временные файлы и результаты сборки .NET
+**/*.tmp
+**/*.temp
+**/*.log
+**/*.cache
+
+###########################
+# Настройки Visual Studio и IDE
+###########################
+*.vspscc
+*.vssscc
+*.vbproj.user
+*.csproj.user
+*.unityproj.user
+*.resharper
+*.dotSettings
+.idea/
+.vs/ # Папка, содержащая настройки IDE и временные файлы для VS 2017+
+!**/.vs/LicenseCaches/ # Исключаем, если не хотите игнорировать кэши лицензий
+
+# Файлы решений и проектов
+*.sln
+*.vcxproj
+*.fsproj
+*.vbproj
+*.lproj
+*.dbmdl
+*.wdproj
+
+###########################
+# Nuget и Управление пакетами
+###########################
+# Локальные пакеты Nuget
+packages/
+
+# Папка, содержащая кеш восстановленных пакетов (обычно находится вне репозитория)
+# Но на всякий случай, если она создается локально:
+NuGet.exe
+nuget.config
+*.nupkg
+.nuget/NuGetScratch/

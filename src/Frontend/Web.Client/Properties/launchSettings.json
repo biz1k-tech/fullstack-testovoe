@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Web.Client": {
+      "commandName": "Project",
+      "nativeDebugging": true,
+      "sqlDebugging": true
+    }
+  }
+}
