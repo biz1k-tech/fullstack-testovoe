@@ -1,9 +1,8 @@
 ﻿using Application.Models;
 
-namespace Application.Services.ImageCopyService
+namespace Application.Services.ImageCopyService;
+
+public interface IImageCopyService
 {
-    public interface IImageCopyService
-    {
-        Task<ImageCopyDto> CopyImageBaseAsync(Guid id, CancellationToken cancellationToken);
-    }
+    Task<ImageCopyDto> CopyImageBaseAsync(Guid id, CancellationToken cancellationToken);
 }

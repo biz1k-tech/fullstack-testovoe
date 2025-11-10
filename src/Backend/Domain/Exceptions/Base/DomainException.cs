@@ -1,7 +1,6 @@
-﻿namespace Domain.Exceptions.Base
+﻿namespace Domain.Exceptions.Base;
+
+public abstract class DomainException(DomainErrorCode domainErrorCode, string message) : Exception(message)
 {
-    public abstract class DomainException(DomainErrorCode domainErrorCode, string message) : Exception(message)
-    {
-        public DomainErrorCode DomainErrorCode { get; } = domainErrorCode;
-    }
+    public DomainErrorCode DomainErrorCode { get; } = domainErrorCode;
 }

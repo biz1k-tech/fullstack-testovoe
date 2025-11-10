@@ -1,8 +1,7 @@
-﻿namespace Shared.ViewModel
+﻿namespace Shared.ViewModel;
+
+public class UpdateImageViewModel
 {
-    public class UpdateImageViewModel
-    {
-        public Guid Id { get; set; }
-        public string Description { get; set; }
-    }
+    public Guid Id { get; set; }
+    public string Description { get; set; }
 }

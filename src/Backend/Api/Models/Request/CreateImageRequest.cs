@@ -1,8 +1,7 @@
-﻿namespace Api.Models.Request
+﻿namespace Api.Models.Request;
+
+public class CreateImageRequest
 {
-    public class CreateImageRequest
-    {
-        public string Description { get; set; }
-        public IFormFile File { get; set; }
-    }
+    public string Description { get; set; }
+    public IFormFile File { get; set; }
 }

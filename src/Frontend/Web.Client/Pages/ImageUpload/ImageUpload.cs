@@ -9,9 +9,8 @@ namespace Web.Client.Pages.ImageUpload;
 
 public partial class ImageUpload : ComponentBase
 {
-    [Inject] public IImageBaseService ImageBaseService { get; set; }
-
     private bool isUploading;
+    [Inject] public IImageBaseService ImageBaseService { get; set; }
     private CreateImageViewModel ViewModel { get; set; } = new();
 
     protected override void OnInitialized()

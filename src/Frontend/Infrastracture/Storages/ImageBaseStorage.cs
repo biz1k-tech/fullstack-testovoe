@@ -1,112 +1,110 @@
-﻿using Application.Storages;
-using Domain.Entity;
+﻿using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
+using Application.Storages;
+using Domain.Entity;
 
-namespace Infrastructure.Storages
+namespace Infrastructure.Storages;
+
+public class ImageBaseStorage : IImageBaseStorage
 {
-    public class ImageBaseStorage: IImageBaseStorage
+    private readonly HttpClient _httpClient;
+
+    public ImageBaseStorage(
+        HttpClient httpClient)
     {
-        private readonly HttpClient _httpClient;
+        _httpClient = httpClient;
+    }
 
-        public ImageBaseStorage(
-            HttpClient httpClient)
+    public async Task<bool> CopyImage(Guid id)
+    {
+        try
         {
-            _httpClient = httpClient;
+            var response = await _httpClient.PostAsync($"api/images/{id}/copy", null);
+
+            return response.IsSuccessStatusCode;
         }
-
-        public async Task<bool> CopyImage(Guid id)
+        catch (Exception ex)
         {
-            try
-            {
-                var response = await _httpClient.PostAsync($"api/images/{id}/copy", null);
-
-                return response.IsSuccessStatusCode;
-
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            return false;
         }
+    }
 
-        public async Task<bool> CreateImage(string description, Stream fileStream, string fileName, string contentType)
+    public async Task<bool> CreateImage(string description, Stream fileStream, string fileName, string contentType)
+    {
+        using var content = new MultipartFormDataContent();
+
+        content.Add(new StringContent(description), "Description");
+
+        var fileContent = new StreamContent(fileStream);
+        fileContent.Headers.ContentType = new MediaTypeHeaderValue(contentType);
+
+        content.Add(fileContent, "File", fileName);
+
+        try
         {
-            using var content = new MultipartFormDataContent();
+            var response = await _httpClient.PostAsync("api/images", content);
 
-            content.Add(new StringContent(description), "Description");
-
-            var fileContent = new StreamContent(fileStream);
-            fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(contentType);
-
-            content.Add(fileContent, "File", fileName);
-
-            try
-            {
-                var response = await _httpClient.PostAsync("api/images", content);
-
-                return response.IsSuccessStatusCode;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            return response.IsSuccessStatusCode;
         }
-
-        public async Task<IEnumerable<ImageBase>?> GetAllImages()
+        catch (Exception ex)
         {
-            IEnumerable<ImageBase>? images = null;
-            try
-            {
-                var response = await _httpClient.GetAsync("api/images");
-                images = await response.Content.ReadFromJsonAsync<List<ImageBase>>();
-                
-                return images;
-            }
-            catch (Exception ex)
-            {
-            }
+            return false;
+        }
+    }
+
+    public async Task<IEnumerable<ImageBase>?> GetAllImages()
+    {
+        IEnumerable<ImageBase>? images = null;
+        try
+        {
+            var response = await _httpClient.GetAsync("api/images");
+            images = await response.Content.ReadFromJsonAsync<List<ImageBase>>();
 
             return images;
         }
-
-        public async Task<bool> RemoveImage(Guid id)
+        catch (Exception ex)
         {
-            try
-            {
-                var response = await _httpClient.DeleteAsync($"api/images/{id}");
-
-                return response.IsSuccessStatusCode;
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
         }
 
-        public async Task<bool> UpdateImage(Guid id, string description)
+        return images;
+    }
+
+    public async Task<bool> RemoveImage(Guid id)
+    {
+        try
         {
-            try
-            {
+            var response = await _httpClient.DeleteAsync($"api/images/{id}");
 
-                using StringContent content = new(
-                    JsonSerializer.Serialize(new 
-                    {
-                        Id = id,
-                        Description = description
-                    }),
-                    Encoding.UTF8,
-                    "application/json");
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+    }
 
-                var response = await _httpClient.PatchAsync("api/images", content);
+    public async Task<bool> UpdateImage(Guid id, string description)
+    {
+        try
+        {
+            using StringContent content = new(
+                JsonSerializer.Serialize(new
+                {
+                    Id = id,
+                    Description = description
+                }),
+                Encoding.UTF8,
+                "application/json");
 
-                return response.IsSuccessStatusCode;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            var response = await _httpClient.PatchAsync("api/images", content);
+
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            return false;
         }
     }
 }

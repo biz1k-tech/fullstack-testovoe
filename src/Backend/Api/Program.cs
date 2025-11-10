@@ -1,6 +1,6 @@
+using System.Reflection;
 using Api.Extensions.Middleware;
 using Api.Extensions.Providers;
-using System.Reflection;
 using Microsoft.Extensions.FileProviders;
 
 const string AllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -39,7 +39,7 @@ if (app.Environment.IsDevelopment())
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
-        Path.Combine(app.Environment.ContentRootPath,builder.Configuration["Images:Path"]!)),
+        Path.Combine(app.Environment.ContentRootPath, builder.Configuration["Images:Path"]!)),
     RequestPath = builder.Configuration["Images:RequestPath"]
 });
 app.UseMiddleware<ErrorHandlingMiddleware>();

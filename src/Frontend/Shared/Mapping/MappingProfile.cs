@@ -3,15 +3,14 @@ using AutoMapper;
 using Domain.Entity;
 using Shared.ViewModel;
 
-namespace Shared.Mapping
+namespace Shared.Mapping;
+
+public class MappingProfile : Profile
 {
-    public class MappingProfile : Profile
+    public MappingProfile()
     {
-        public MappingProfile()
-        {
-            CreateMap<ImageBase, ImageBaseDto>();
-            CreateMap<ImageBaseDto, ImageViewModel>();
-            CreateMap<UpdateImageViewModel, UpdateImageDto>();
-        }
+        CreateMap<ImageBase, ImageBaseDto>();
+        CreateMap<ImageBaseDto, ImageViewModel>();
+        CreateMap<UpdateImageViewModel, UpdateImageDto>();
     }
 }

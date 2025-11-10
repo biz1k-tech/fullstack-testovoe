@@ -1,7 +1,6 @@
-﻿namespace Shared.Const
+﻿namespace Shared.Const;
+
+public static class ValidationConst
 {
-    public static class ValidationConst
-    {
-        public const int MaxFileSizeMb = 5;
-    }
+    public const int MaxFileSizeMb = 5;
 }

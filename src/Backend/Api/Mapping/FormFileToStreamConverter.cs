@@ -1,20 +1,19 @@
 ﻿using AutoMapper;
 
-namespace Api.Mapping
+namespace Api.Mapping;
+
+internal class FormFileToStreamConverter : IValueConverter<IFormFile, Stream>
 {
-    internal class FormFileToStreamConverter : IValueConverter<IFormFile, Stream>
+    public Stream Convert(IFormFile source, ResolutionContext context)
     {
-        public Stream Convert(IFormFile source, ResolutionContext context)
-        {
-            if (source == null)
-                return Stream.Null;
+        if (source == null)
+            return Stream.Null;
 
-            var memoryStream = new MemoryStream();
-            source.CopyTo(memoryStream);
+        var memoryStream = new MemoryStream();
+        source.CopyTo(memoryStream);
 
-            memoryStream.Position = 0;
+        memoryStream.Position = 0;
 
-            return memoryStream;
-        }
+        return memoryStream;
     }
 }

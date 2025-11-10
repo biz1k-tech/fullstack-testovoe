@@ -1,9 +1,8 @@
-﻿namespace Api.Models.Response
+﻿namespace Api.Models.Response;
+
+public class ImageCopyResponse
 {
-    public class ImageCopyResponse
-    {
-        public Guid Id { get; set; }
-        public Guid SourceId { get; set; }
-        public string SourceDescription { get; set; }
-    }
+    public Guid Id { get; set; }
+    public Guid SourceId { get; set; }
+    public string SourceDescription { get; set; }
 }

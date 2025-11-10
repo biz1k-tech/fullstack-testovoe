@@ -1,8 +1,7 @@
-﻿namespace Api.Models.Request
+﻿namespace Api.Models.Request;
+
+public class UpdateImageRequest
 {
-    public class UpdateImageRequest
-    {
-        public Guid Id { get; set; }
-        public string Description { get; set; }
-    }
+    public Guid Id { get; set; }
+    public string Description { get; set; }
 }

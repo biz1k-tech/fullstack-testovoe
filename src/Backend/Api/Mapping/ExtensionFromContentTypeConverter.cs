@@ -2,8 +2,7 @@
 
 namespace Api.Mapping;
 
-
-internal class ExtensionFromContentTypeConverter(): IValueConverter<string, string>
+internal class ExtensionFromContentTypeConverter : IValueConverter<string, string>
 {
     public string Convert(string contentType, ResolutionContext context) =>
         contentType switch

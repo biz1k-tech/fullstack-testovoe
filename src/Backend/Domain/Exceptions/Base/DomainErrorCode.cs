@@ -1,8 +1,7 @@
-﻿namespace Domain.Exceptions.Base
+﻿namespace Domain.Exceptions.Base;
+
+public enum DomainErrorCode
 {
-    public enum DomainErrorCode
-    {
-        NotFound = 404,
-        Conflict = 409
-    }
+    NotFound = 404,
+    Conflict = 409
 }

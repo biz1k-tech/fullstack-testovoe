@@ -11,16 +11,16 @@
 
     <div class="form-group mb-3">
         <label for="description">Описание:</label>
-        <InputText id="description" class="form-control" @bind-Value="ViewModel.Description" />
-        <ValidationMessage For="@(() => ViewModel.Description)" /> 
+        <InputText id="description" class="form-control" @bind-Value="ViewModel.Description"/>
+        <ValidationMessage For="@(() => ViewModel.Description)"/>
     </div>
 
     <div class="form-group mb-4">
         <label for="file">Файл изображения:</label>
-        <InputFile id="file" key="@ViewModel" OnChange="@((e) => LoadFile(e))" />
-        <ValidationMessage For="@(() => ViewModel.ImageBrowserFile)" /> 
+        <InputFile id="file" key="@ViewModel" OnChange="@(e => LoadFile(e))"/>
+        <ValidationMessage For="@(() => ViewModel.ImageBrowserFile)"/>
     </div>
-   
+
     <button type="submit" class="btn btn-primary">
         Сохранить
     </button>

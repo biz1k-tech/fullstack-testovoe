@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Components.Forms;
 
-namespace Shared.ViewModel
+namespace Shared.ViewModel;
+
+public class CreateImageViewModel
 {
-    public class CreateImageViewModel
-    {
-        public IBrowserFile ImageBrowserFile { get; set; }
-        public string Description { get; set; }
-    }
+    public IBrowserFile ImageBrowserFile { get; set; }
+    public string Description { get; set; }
 }

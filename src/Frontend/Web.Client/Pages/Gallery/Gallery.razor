@@ -53,7 +53,7 @@ else
                     <EditForm Model="@image" OnValidSubmit="@(() => UpdateImageAsync(image.Id))" FormName="UpdateImage">
                         <FluentValidationValidator/>
 
-                        <div class="form-group mb-3 " >
+                        <div class="form-group mb-3 ">
                             <label for="description">Описание:</label>
                             <InputText id="description" class="form-control" style="width: 150px; margin-bottom:20px" @bind-Value="_updateImageViewModel.Description"/>
                             <ValidationMessage For="@(() => _updateImageViewModel.Description)"/>

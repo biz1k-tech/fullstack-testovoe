@@ -1,52 +1,50 @@
 ﻿using Application.Configuration;
 using Application.Interfaces;
-using Application.Models;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 
-namespace Infrastructure.Common.Adapter
+namespace Infrastructure.Common.Adapter;
+
+public class ImageSharpAdapter : IImageResize
 {
-    public class ImageSharpAdapter : IImageResize
+    public (Stream FullImageStream, Stream ThumbnailStream) Resize(Stream originalStream, ImageResizeOptions settings)
     {
-        public (Stream FullImageStream, Stream ThumbnailStream) Resize(Stream originalStream, ImageResizeOptions settings)
+        originalStream.Seek(0, SeekOrigin.Begin);
+
+        using var image = Image.Load<Rgba32>(originalStream);
+
+        var fullImage = image.Clone();
+        var thumbnailImage = image.Clone();
+
+        MemoryStream fullStream = null;
+        MemoryStream thumbStream = null;
+
+        try
         {
-            originalStream.Seek(0, SeekOrigin.Begin);
+            fullStream = new MemoryStream();
 
-            using var image = Image.Load<Rgba32>(originalStream);
+            fullImage.Save(fullStream, new JpegEncoder { Quality = settings.JpegQuality });
+            fullStream.Seek(0, SeekOrigin.Begin);
 
-            var fullImage = image.Clone();
-            var thumbnailImage = image.Clone();
-
-            MemoryStream fullStream = null;
-            MemoryStream thumbStream = null;
-
-            try
+            thumbnailImage.Mutate(x => x.Resize(new ResizeOptions
             {
-                fullStream = new MemoryStream();
+                Size = new Size(settings.ThumbnailWidth, settings.ThumbnailHeight),
+                Mode = ResizeMode.Max
+            }));
 
-                fullImage.Save(fullStream, new JpegEncoder { Quality = settings.JpegQuality });
-                fullStream.Seek(0, SeekOrigin.Begin); 
+            thumbStream = new MemoryStream();
 
-                thumbnailImage.Mutate(x => x.Resize(new ResizeOptions
-                {
-                    Size = new Size(settings.ThumbnailWidth, settings.ThumbnailHeight),
-                    Mode = ResizeMode.Max 
-                }));
+            thumbnailImage.Save(thumbStream, new JpegEncoder { Quality = settings.JpegQuality });
+            thumbStream.Seek(0, SeekOrigin.Begin);
 
-                thumbStream = new MemoryStream();
-
-                thumbnailImage.Save(thumbStream, new JpegEncoder { Quality = settings.JpegQuality });
-                thumbStream.Seek(0, SeekOrigin.Begin); 
-
-                return (fullStream, thumbStream);
-            }
-            finally
-            {
-                fullImage?.Dispose();
-                thumbnailImage?.Dispose();
-            }
+            return (fullStream, thumbStream);
+        }
+        finally
+        {
+            fullImage?.Dispose();
+            thumbnailImage?.Dispose();
         }
     }
 }

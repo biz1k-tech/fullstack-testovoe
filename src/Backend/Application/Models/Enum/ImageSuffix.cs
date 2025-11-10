@@ -1,8 +1,7 @@
-﻿namespace Application.Models.Enum
+﻿namespace Application.Models.Enum;
+
+public enum ImageSuffix
 {
-    public enum ImageSuffix
-    {
-        Original,
-        Resize
-    }
+    Original,
+    Resize
 }

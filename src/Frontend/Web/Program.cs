@@ -1,6 +1,6 @@
 using Shared.Providers;
 using Web.Components;
-
+using _Imports = Web.Client._Imports;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +33,6 @@ app.MapControllers();
 
 app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(Web.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(_Imports).Assembly);
 
 app.Run();
