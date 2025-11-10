@@ -8,5 +8,5 @@ public interface IImageBaseStorage
     Task<bool> UpdateImage(Guid id, string description);
     Task<bool> RemoveImage(Guid id);
     Task<bool> CopyImage(Guid id);
-    Task<IEnumerable<ImageBase>> GetAllImages();
+    Task<IEnumerable<ImageBase>>? GetAllImages();
 }

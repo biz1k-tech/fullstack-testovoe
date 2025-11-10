@@ -8,5 +8,5 @@ public interface IImageBaseService
     Task<bool> UpdateImage(UpdateImageDto imageDto);
     Task<bool> RemoveImage(Guid id);
     Task<bool> CopyImage(Guid id);
-    Task<IEnumerable<ImageBaseDto>> GetAllImagesAsync();
+    Task<IEnumerable<ImageBaseDto>?> GetAllImagesAsync();
 }

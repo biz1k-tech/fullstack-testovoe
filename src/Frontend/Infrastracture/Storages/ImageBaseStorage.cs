@@ -54,9 +54,9 @@ public class ImageBaseStorage : IImageBaseStorage
         }
     }
 
-    public async Task<IEnumerable<ImageBase>?> GetAllImages()
+    public async Task<IEnumerable<ImageBase>>? GetAllImages()
     {
-        IEnumerable<ImageBase>? images = null;
+        IEnumerable<ImageBase> images = null;
         try
         {
             var response = await _httpClient.GetAsync("api/images");

@@ -34,10 +34,13 @@ public class ImageBaseService : IImageBaseService
             imageDto.FileName, imageDto.ContentType);
     }
 
-    public async Task<IEnumerable<ImageBaseDto>> GetAllImagesAsync()
+    public async Task<IEnumerable<ImageBaseDto>?> GetAllImagesAsync()
     {
         var images = await _imageBaseStorage.GetAllImages();
-
+        if (images == null || !images.Any())
+        {
+            return Enumerable.Empty<ImageBaseDto>();
+        }
         foreach (var image in images)
         {
             image.OriginalImageUrl = string.Concat(_options.Value.BaseUrl, image.OriginalImageUrl);

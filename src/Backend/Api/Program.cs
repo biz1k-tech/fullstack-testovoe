@@ -3,7 +3,7 @@ using Api.Extensions.Middleware;
 using Api.Extensions.Providers;
 using Microsoft.Extensions.FileProviders;
 
-const string AllowSpecificOrigins = "_myAllowSpecificOrigins";
+const string allowSpecificOrigins = "_myAllowSpecificOrigins";
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +19,7 @@ builder.Services.AddServiceExtensions(builder.Configuration);
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: AllowSpecificOrigins,
+    options.AddPolicy(name: allowSpecificOrigins,
         policy =>
         {
             policy.AllowAnyOrigin()
@@ -36,6 +36,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(allowSpecificOrigins);
+
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
@@ -44,8 +46,6 @@ app.UseStaticFiles(new StaticFileOptions
 });
 app.UseMiddleware<ErrorHandlingMiddleware>();
 
-app.UseHttpsRedirection();
-app.UseCors(AllowSpecificOrigins);
 app.UseAuthorization();
 
 app.MapControllers();
