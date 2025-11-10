@@ -44,9 +44,6 @@ src/Infrastracture/Images/
 ###########################
 *.vspscc
 *.vssscc
-*.vbproj.user
-*.csproj.user
-*.unityproj.user
 *.resharper
 *.dotSettings
 .idea/
