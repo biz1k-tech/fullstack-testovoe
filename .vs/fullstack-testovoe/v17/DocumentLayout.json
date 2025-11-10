@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|solutionrelative:src\\frontend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web.client\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|solutionrelative:src\\frontend\\web.client\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{600E711B-1A73-768F-93F8-1A26C4691C8C}|src\\Backend\\Api\\Api.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{600E711B-1A73-768F-93F8-1A26C4691C8C}|src\\Backend\\Api\\Api.csproj|solutionrelative:src\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|solutionrelative:src\\frontend\\web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{600E711B-1A73-768F-93F8-1A26C4691C8C}|src\\Backend\\Api\\Api.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\backend\\api\\extensions\\providers\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600E711B-1A73-768F-93F8-1A26C4691C8C}|src\\Backend\\Api\\Api.csproj|solutionrelative:src\\backend\\api\\extensions\\providers\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|solutionrelative:src\\frontend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2255201-5B05-8B81-308C-0745E9EF2B26}|src\\Frontend\\Application\\Application.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\application\\services\\imagebaseservice\\imagebaseservce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2255201-5B05-8B81-308C-0745E9EF2B26}|src\\Frontend\\Application\\Application.csproj|solutionrelative:src\\frontend\\application\\services\\imagebaseservice\\imagebaseservce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web.client\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|solutionrelative:src\\frontend\\web.client\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,12 +61,34 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\Frontend\\Web\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\Frontend\\Web\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-10T16:54:21.82Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "ServiceProvider.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Backend\\Api\\Extensions\\Providers\\ServiceProvider.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\Api\\Extensions\\Providers\\ServiceProvider.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Backend\\Api\\Extensions\\Providers\\ServiceProvider.cs",
+              "RelativeToolTip": "src\\Backend\\Api\\Extensions\\Providers\\ServiceProvider.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T16:41:41.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\appsettings.json",
               "RelativeDocumentMoniker": "src\\Frontend\\Web\\appsettings.json",
@@ -71,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web.Client\\wwwroot\\appsettings.json",
               "RelativeDocumentMoniker": "src\\Frontend\\Web.Client\\wwwroot\\appsettings.json",
@@ -84,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ImageBaseServce.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Application\\Services\\ImageBaseService\\ImageBaseServce.cs",
               "RelativeDocumentMoniker": "src\\Frontend\\Application\\Services\\ImageBaseService\\ImageBaseServce.cs",
@@ -97,26 +127,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\Program.cs",
               "RelativeDocumentMoniker": "src\\Frontend\\Web\\Program.cs",
               "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\Program.cs",
               "RelativeToolTip": "src\\Frontend\\Web\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T15:47:15.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Backend\\Api\\Program.cs",
               "RelativeDocumentMoniker": "src\\Backend\\Api\\Program.cs",
               "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Backend\\Api\\Program.cs",
               "RelativeToolTip": "src\\Backend\\Api\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T15:47:04.416Z",
               "EditorCaption": ""

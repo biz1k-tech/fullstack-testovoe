@@ -38,10 +38,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors(allowSpecificOrigins);
 
+var imagesPath = Path.Combine(app.Environment.ContentRootPath, builder.Configuration["Images:Path"]!);
+if (!Directory.Exists(imagesPath))
+{
+    Directory.CreateDirectory(imagesPath);
+}
+
 app.UseStaticFiles(new StaticFileOptions
 {
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(app.Environment.ContentRootPath, builder.Configuration["Images:Path"]!)),
+    FileProvider = new PhysicalFileProvider(imagesPath),
     RequestPath = builder.Configuration["Images:RequestPath"]
 });
 app.UseMiddleware<ErrorHandlingMiddleware>();
