@@ -8,7 +8,7 @@ obj/
 *.suo
 *.user
 # Игнорирование папки для загружаемых/статических изображений
-src/Infrastracture/Images/
+src\Backend\Infrastracture\Images
 
 *.userosscache
 *.sln.docstates
