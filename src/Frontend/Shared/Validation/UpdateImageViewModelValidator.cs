@@ -9,7 +9,8 @@ public class UpdateImageViewModelValidator : AbstractValidator<UpdateImageViewMo
     {
         RuleFor(x => x.Description)
             .Cascade(CascadeMode.Stop)
-            .NotNull().WithErrorCode(ValidationErrorCode.Empty)
-            .MaximumLength(50).WithErrorCode(ValidationErrorCode.TooLong);
+            .NotNull().WithErrorCode(ValidationErrorCode.Empty).WithMessage("Описание не может быть пустым.")
+            .NotEmpty().WithErrorCode(ValidationErrorCode.Empty).WithMessage("Описание не может быть пустым.")
+            .MaximumLength(50).WithErrorCode(ValidationErrorCode.TooLong).WithMessage("Описание не может быть длиннее 50 символов.");
     }
 }

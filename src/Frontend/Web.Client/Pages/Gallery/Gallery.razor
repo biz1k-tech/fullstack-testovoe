@@ -3,6 +3,10 @@
 @using Web.Client.Components
 @rendermode InteractiveWebAssembly
 
+<head>
+    <link href="css/Gallery.css" rel="stylesheet" />
+</head>
+
 <h1>Галерея Изображений</h1>
 
 <ConfirmModalRemove @ref="_confirmModalRemove"
@@ -24,9 +28,9 @@ else
     <div class="image-gallery">
         @foreach (var image in imagesViewModels)
         {
-            <div class="gallery-item-wrapper" style="display: flex; gap: 100px; padding: 30px; border: 1px solid #ccc;">
+            <div class="gallery-item-wrapper">
 
-                <div class="image-info" style="display: flex; flex-direction: column; gap: 2px; align-items: stretch; width:400px;">
+                <div class="image-info">
                     <a href="@image.OriginalImageUrl"
                        data-fancybox="gallery"
                        data-caption="@image.Description">
@@ -36,7 +40,7 @@ else
 
                     <p class="image-id mb-0">ID: @image.Id</p>
                     <p class="image-description mb-0">Описание: @image.Description</p>
-                    <p class="image-date mb-0">Время создание: @image.CreatedAt</p>
+                    <p class="image-date mb-0">Время создания: @image.CreatedAt</p>
 
                     <div class="form-check mt-2">
                         <input type="checkbox"
@@ -49,13 +53,13 @@ else
                         </label>
                     </div>
                 </div>
-                <div class="info" style="display: flex; flex-direction: column; gap: 5px; align-items: stretch; width:400px;">
-                    <EditForm Model="@image" OnValidSubmit="@(() => UpdateImageAsync(image.Id))" FormName="UpdateImage">
+                <div class="images-buttons">
+                    <EditForm Model="@_updateImageViewModel" OnValidSubmit="@(() => UpdateImageAsync(image.Id))" FormName="UpdateImage">
                         <FluentValidationValidator/>
 
                         <div class="form-group mb-3 ">
                             <label for="description">Описание:</label>
-                            <InputText id="description" class="form-control" style="width: 150px; margin-bottom:20px" @bind-Value="_updateImageViewModel.Description"/>
+                            <InputText id="description" class="form-control input-description" @bind-Value="_updateImageViewModel.Description" />
                             <ValidationMessage For="@(() => _updateImageViewModel.Description)"/>
 
                             <button type="submit" class="btn btn-primary w-50">
@@ -63,7 +67,7 @@ else
                             </button>
                         </div>
                     </EditForm>
-                    <div class="remove-image" style="margin-bottom: 10px">
+                    <div class="image-button-remove">
                         <button type="button" class="btn btn-primary w-50"
                                 @onclick="() => ShowConfirmModal(image.Id)">
                             Удалить

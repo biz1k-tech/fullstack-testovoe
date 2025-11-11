@@ -12,18 +12,18 @@ public partial class Gallery : ComponentBase
     private ConfirmModalRemove _confirmModalRemove = default!;
     private Guid _selectedId;
     private UpdateImageViewModel _updateImageViewModel = new();
-
     private List<ImageViewModel> imagesViewModels;
     private bool isLoad;
+
     [Inject] private IMapper _mapper { get; set; }
     [Inject] public IImageBaseService ImageBaseService { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        isLoad = true;
-
         var imagesDto = await ImageBaseService.GetAllImagesAsync();
         imagesViewModels = _mapper.Map<List<ImageViewModel>>(imagesDto);
+
+        isLoad = true;
     }
 
     public async Task UpdateImageAsync(Guid id)

@@ -1,0 +1,31 @@
+﻿.gallery-item-wrapper {
+    display: flex;
+    gap: 100px;
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+.image-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: stretch;
+    width: 400px;
+}
+
+.images-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: stretch;
+    width: 400px;
+}
+
+.image-button-remove {
+    margin-bottom: 10px;
+}
+
+.input-description {
+    width: 150px;
+    margin-bottom: 20px;
+}

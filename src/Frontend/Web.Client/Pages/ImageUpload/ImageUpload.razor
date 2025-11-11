@@ -17,7 +17,7 @@
 
     <div class="form-group mb-4">
         <label for="file">Файл изображения:</label>
-        <InputFile id="file" key="@ViewModel" OnChange="@(e => LoadFile(e))"/>
+        <InputFile id="file" key="@ViewModel" OnChange="@(e => LoadFile(e))" accept="image/*"/>
         <ValidationMessage For="@(() => ViewModel.ImageBrowserFile)"/>
     </div>
 

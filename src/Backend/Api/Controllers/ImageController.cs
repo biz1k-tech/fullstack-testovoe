@@ -51,7 +51,7 @@ public class ImageController : ControllerBase
     }
 
     /// <summary>
-    ///     Создание изображения в перву бд.
+    ///     Создание изображения в первую бд.
     /// </summary>
     [HttpPost]
     [ServiceFilter(typeof(ValidationFilter<CreateImageRequest>))]

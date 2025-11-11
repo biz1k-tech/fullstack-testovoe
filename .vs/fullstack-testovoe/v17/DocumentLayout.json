@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{600E711B-1A73-768F-93F8-1A26C4691C8C}|src\\Backend\\Api\\Api.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{600E711B-1A73-768F-93F8-1A26C4691C8C}|src\\Backend\\Api\\Api.csproj|solutionrelative:src\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CD26CDD-DB9D-6E1A-A8A9-0E0C159B23F9}|src\\Frontend\\Shared\\Shared.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\shared\\validation\\updateimageviewmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD26CDD-DB9D-6E1A-A8A9-0E0C159B23F9}|src\\Frontend\\Shared\\Shared.csproj|solutionrelative:src\\frontend\\shared\\validation\\updateimageviewmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|solutionrelative:src\\frontend\\web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1CD26CDD-DB9D-6E1A-A8A9-0E0C159B23F9}|src\\Frontend\\Shared\\Shared.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\shared\\validation\\createimageviewmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD26CDD-DB9D-6E1A-A8A9-0E0C159B23F9}|src\\Frontend\\Shared\\Shared.csproj|solutionrelative:src\\frontend\\shared\\validation\\createimageviewmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{600E711B-1A73-768F-93F8-1A26C4691C8C}|src\\Backend\\Api\\Api.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\backend\\api\\extensions\\providers\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{600E711B-1A73-768F-93F8-1A26C4691C8C}|src\\Backend\\Api\\Api.csproj|solutionrelative:src\\backend\\api\\extensions\\providers\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web.client\\pages\\gallery\\gallery.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|solutionrelative:src\\frontend\\web.client\\pages\\gallery\\gallery.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|solutionrelative:src\\frontend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1CD26CDD-DB9D-6E1A-A8A9-0E0C159B23F9}|src\\Frontend\\Shared\\Shared.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\shared\\providers\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD26CDD-DB9D-6E1A-A8A9-0E0C159B23F9}|src\\Frontend\\Shared\\Shared.csproj|solutionrelative:src\\frontend\\shared\\providers\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D3B63EF-384E-3B39-B879-870A837A4D1D}|src\\Frontend\\Web\\Web.csproj|solutionrelative:src\\frontend\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2255201-5B05-8B81-308C-0745E9EF2B26}|src\\Frontend\\Application\\Application.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\application\\services\\imagebaseservice\\imagebaseservce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2255201-5B05-8B81-308C-0745E9EF2B26}|src\\Frontend\\Application\\Application.csproj|solutionrelative:src\\frontend\\application\\services\\imagebaseservice\\imagebaseservce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web.client\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|solutionrelative:src\\frontend\\web.client\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|c:\\users\\\u043D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\frontend\\web.client\\pages\\imageupload\\imageupload.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7BA995C-5293-8082-F63D-9772EBC5F98D}|src\\Frontend\\Web.Client\\Web.Client.csproj|solutionrelative:src\\frontend\\web.client\\pages\\imageupload\\imageupload.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,93 +54,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "src\\Frontend\\Web\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\Properties\\launchSettings.json",
-              "RelativeToolTip": "src\\Frontend\\Web\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-10T16:54:21.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceProvider.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Backend\\Api\\Extensions\\Providers\\ServiceProvider.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\Api\\Extensions\\Providers\\ServiceProvider.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Backend\\Api\\Extensions\\Providers\\ServiceProvider.cs",
-              "RelativeToolTip": "src\\Backend\\Api\\Extensions\\Providers\\ServiceProvider.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T16:41:41.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Frontend\\Web\\appsettings.json",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\appsettings.json",
-              "RelativeToolTip": "src\\Frontend\\Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-10T16:06:57.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web.Client\\wwwroot\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Frontend\\Web.Client\\wwwroot\\appsettings.json",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web.Client\\wwwroot\\appsettings.json",
-              "RelativeToolTip": "src\\Frontend\\Web.Client\\wwwroot\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-10T16:00:41.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ImageBaseServce.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Application\\Services\\ImageBaseService\\ImageBaseServce.cs",
-              "RelativeDocumentMoniker": "src\\Frontend\\Application\\Services\\ImageBaseService\\ImageBaseServce.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Application\\Services\\ImageBaseService\\ImageBaseServce.cs",
-              "RelativeToolTip": "src\\Frontend\\Application\\Services\\ImageBaseService\\ImageBaseServce.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Title": "ServiceProvider.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Shared\\Providers\\ServiceProvider.cs",
+              "RelativeDocumentMoniker": "src\\Frontend\\Shared\\Providers\\ServiceProvider.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Shared\\Providers\\ServiceProvider.cs",
+              "RelativeToolTip": "src\\Frontend\\Shared\\Providers\\ServiceProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:56:15.034Z",
+              "WhenOpened": "2025-11-11T14:31:04.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Frontend\\Web\\Program.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web\\Program.cs",
-              "RelativeToolTip": "src\\Frontend\\Web\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CreateImageViewModelValidator.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Shared\\Validation\\CreateImageViewModelValidator.cs",
+              "RelativeDocumentMoniker": "src\\Frontend\\Shared\\Validation\\CreateImageViewModelValidator.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Shared\\Validation\\CreateImageViewModelValidator.cs",
+              "RelativeToolTip": "src\\Frontend\\Shared\\Validation\\CreateImageViewModelValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:47:15.22Z",
+              "WhenOpened": "2025-11-11T14:27:48.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Backend\\Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\Api\\Program.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Backend\\Api\\Program.cs",
-              "RelativeToolTip": "src\\Backend\\Api\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAfAAAAAAAAAA==",
+              "Title": "UpdateImageViewModelValidator.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Shared\\Validation\\UpdateImageViewModelValidator.cs",
+              "RelativeDocumentMoniker": "src\\Frontend\\Shared\\Validation\\UpdateImageViewModelValidator.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Shared\\Validation\\UpdateImageViewModelValidator.cs",
+              "RelativeToolTip": "src\\Frontend\\Shared\\Validation\\UpdateImageViewModelValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:47:04.416Z",
+              "WhenOpened": "2025-11-11T14:27:27.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gallery.razor",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web.Client\\Pages\\Gallery\\Gallery.razor",
+              "RelativeDocumentMoniker": "src\\Frontend\\Web.Client\\Pages\\Gallery\\Gallery.razor",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web.Client\\Pages\\Gallery\\Gallery.razor",
+              "RelativeToolTip": "src\\Frontend\\Web.Client\\Pages\\Gallery\\Gallery.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T14:26:05.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImageUpload.razor",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web.Client\\Pages\\ImageUpload\\ImageUpload.razor",
+              "RelativeDocumentMoniker": "src\\Frontend\\Web.Client\\Pages\\ImageUpload\\ImageUpload.razor",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u0438\u0442\u0430\\source\\repos\\fullstack-testovoe\\src\\Frontend\\Web.Client\\Pages\\ImageUpload\\ImageUpload.razor",
+              "RelativeToolTip": "src\\Frontend\\Web.Client\\Pages\\ImageUpload\\ImageUpload.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T14:26:05.012Z",
               "EditorCaption": ""
             }
           ]
